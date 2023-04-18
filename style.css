@@ -241,7 +241,7 @@ label{
     margin-top: 7%;
     transition: all 1s;
     transform: translateY(0%);
-    opacity: 1;
+    opacity: 0;
 }
 
 #resultado p{
