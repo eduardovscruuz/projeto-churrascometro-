@@ -28,14 +28,14 @@
 
             <div id="inputButtons">
                 <label>Quantos adultos irão?</label>
-                <input id="adultos" name="adultos" type="number" placeholder="Adultos">
+                <input id="adultos" name="adultos" type="number" placeholder="Adultos" min="0" required>
                 <label>Quantas crianças?</label>
-                <input id="criancas" name="criancas" type="number" placeholder="Crianças">
+                <input id="criancas" name="criancas" type="number" placeholder="Crianças" min="0" required>
                 <label>Quantas horas de duração? </label>
-                <input id="duracao" name="duracao" type="number" placeholder="Duração(h)">
+                <input id="duracao" name="duracao" type="number" placeholder="Duração(h)" min="0" required>
                 <button onclick="calcular()">Calcular</button>
-
             </div>
+            
             
 
             <div id="resultado">

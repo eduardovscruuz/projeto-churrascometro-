@@ -35,31 +35,32 @@ function bebidasPP(duracao) {
 }
 
 function calcular() {
-    console.log("Calculando...");
-
     let adultos = inputAdultos.value;
     let criancas = inputCriancas.value;
     let duracao = inputDuracao.value;
-
-
-    let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas);
+  
+    if (adultos === '' || criancas === '' || duracao === '') {
+        alert('Por favor, preencha todos os campos antes de calcular.');
+        return;
+    }
+  
+    let qdtTotalCarne = carnePP(duracao) * adultos + carnePP(duracao) / 2 * criancas;
     let qdtTotalCerveja = cervejaPP(duracao) * adultos;
-    let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas);
-
-    
-    
-    resultado.innerHTML = `<strong><p>Para um churrasco de ${duracao} horas, com ${adultos} adultos e ${criancas} crianças, você irá precisar de:</p></strong>`
-    resultado.innerHTML += `<li>${qdtTotalCarne / 1000} Kg de Carne</li>`
-    resultado.innerHTML += `<li>${Math.ceil(qdtTotalCerveja / 355)} Latas de Cerveja</li>`
-    resultado.innerHTML += `<li>${Math.ceil(qdtTotalBebidas / 2000)} Pet's 2l de Bebidas</li>`
-
-    
-    resultado.style.opacity = '1'
-    resultado.style.transform = 'translateY(0)'
-    inputButtons.style.transform = 'translateY(0)'
-    resultado.style.height = '30%'
-    inputButtons.style.height="70%"
-}
+    let qdtTotalBebidas = bebidasPP(duracao) * adultos + bebidasPP(duracao) / 2 * criancas;
+  
+    resultado.innerHTML = `<strong><p>Para um churrasco de ${duracao} horas, com ${adultos} adultos e ${criancas} crianças, você irá precisar de:</p></strong>`;
+    resultado.innerHTML += `<li>${qdtTotalCarne / 1000}Kg de carne</li>`;
+    resultado.innerHTML += `<li>${Math.ceil(qdtTotalCerveja / 355)} Latas de cerveja</li>`;
+    resultado.innerHTML += `<li>${Math.ceil(qdtTotalBebidas / 2000)} Garrafas de 2L de refrigerantes</li>`;
+    resultado.innerHTML += `<i>Aproveite seu churrasco! &#10084 </i>`;
+  
+    resultado.style.opacity = "1";
+    resultado.style.transform = "translateY(0)";
+    inputButtons.style.transform = "translateY(0)";
+    resultado.style.height = "30%";
+    inputButtons.style.height = "70%";
+  }
+  
 
 new CircleType(document.getElementById('demo1'))
   .radius(440);
