@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+.content-container{
+    width: 1320px;
+    height:80vh;
+    display: flex;
+    border-radius: 30px;
+}
+
+.right{
+    border-radius: 0px 30px 30px 0px;
+    width: 40%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffbb00;
+}
+
+input{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+button{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 20%;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color:#ff5100;
+    cursor:pointer;
+    transition: all 0.2s
+}
+
+button:hover{
+    transform: translateY(-10%);
+    background-color:#ff3c00;
+}
+
+
+#inputButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(30%);
+    
+    transition: all 1s;
+
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 900;
+    color: #ff5100;
+}
+
+#resultado{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    border-radius: 15px;
+    height: 30%;
+    margin-top: 7%;
+    transition: all 1s;
+    transform: translateY(55%);
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left{display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    border-radius: 30px 0px 0px 30px;
+    background-color: #A4F4FF;
+}
+img{
+    border-radius: 30px 0px 0px 30px;
+    width: 100%;
+}
+#demo1{
+    font-family: 'Bukhari Script';                           
+    position: absolute;
+    bottom: 70vh;
+    font-size: 4em
+}
+span{
+    font-size: 4.3rem;
+	    text-align: center;
+	    color: #ffbb00;
+	    font-weight: 700;
+      text-shadow: 5px 5px 0px  #e45b00a8, 
+                  10px 10px 0px  #e92f00af, 
+                  15px 15px 0px  #ffa600a2;
+}
